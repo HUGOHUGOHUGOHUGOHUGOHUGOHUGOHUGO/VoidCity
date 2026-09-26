@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;background:#05030b;color:#fff;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+.navbar{height:76px;background:rgba(5,3,12,.94);border-bottom:1px solid #5520a8;display:flex;align-items:center;gap:35px;padding:0 5%;position:sticky;top:0;z-index:20;backdrop-filter:blur(12px)}
+.brand{font-weight:900;font-size:28px;letter-spacing:-1px;display:flex;align-items:center;gap:10px}
+.brand span span{color:#b42cff}
+.brand-mark{font-size:34px;color:#9d25ff;text-shadow:0 0 18px #8b16ff}
+nav{display:flex;gap:28px;margin:auto}
+nav a{font-weight:600;color:#d8d0e7;position:relative;padding:27px 0}
+nav a:hover,nav a.active{color:#fff}
+nav a.active:after{content:"";height:3px;position:absolute;bottom:0;left:0;right:0;background:#b42cff;box-shadow:0 0 14px #b42cff}
+.mini-server{border:1px solid #8d27e9;border-radius:15px;padding:9px 18px;display:flex;flex-direction:column;align-items:center}
+.mini-server small{color:#cfa8ff}
+.page{display:none}.active-page{display:block}
+.hero{min-height:560px;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;background:#0a0614 url("assets/voidcity-bg.png") center/cover no-repeat}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,2,14,.2),rgba(5,2,14,.72))}
+.hero-content{position:relative;z-index:2;padding:50px 20px}
+.logo{font-size:clamp(55px,10vw,110px);font-weight:900;letter-spacing:-5px;text-shadow:0 5px 0 #171020,0 0 35px #9e20ff}
+.logo span{color:#c12cff}
+.tagline{font-size:24px;font-weight:900;letter-spacing:8px;margin:5px 0 15px}
+.hero p{font-size:18px;line-height:1.5;color:#eee;margin-bottom:28px}
+.play-btn,.back-btn{display:inline-block;background:linear-gradient(135deg,#8b19ff,#c72dff);padding:17px 38px;border-radius:14px;font-weight:900;letter-spacing:1px;box-shadow:0 0 30px #8b19ff77;transition:.2s}
+.play-btn:hover,.back-btn:hover{transform:translateY(-3px);box-shadow:0 0 40px #b329ffbb}
+.servers{max-width:1100px;margin:-20px auto 0;position:relative;z-index:5;display:grid;grid-template-columns:1fr 1fr;gap:22px;padding:0 20px}
+.server-card{background:rgba(7,4,17,.95);border:1px solid #7924db;border-radius:18px;padding:25px;display:flex;align-items:center;gap:18px;box-shadow:0 10px 40px #0008}
+.server-icon{font-size:40px;color:#d09aff;min-width:55px;text-align:center}
+.server-info{display:flex;flex-direction:column;gap:5px;min-width:0;flex:1}
+.server-info>span{color:#a935ff;font-weight:900;font-size:18px;letter-spacing:2px}
+.server-info strong{font-size:20px;overflow-wrap:anywhere}
+.server-info small{color:#bdb5ca}.server-info small i{display:inline-block;width:9px;height:9px;background:#24e76c;border-radius:50%;margin-right:7px}
+.port{color:#d49aff;font-size:14px}
+.copy-btn{background:#10081c;color:#fff;border:1px solid #8628ed;border-radius:9px;padding:11px 14px;font-weight:800;cursor:pointer;white-space:nowrap}
+.copy-btn:hover{background:#241036}
+.about{max-width:1100px;margin:80px auto;padding:0 20px 80px}
+.section-title{font-size:31px;font-weight:900;line-height:1.25;margin-bottom:40px}
+.section-title span{color:#a42aff}.section-title b{color:#a42aff}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:30px 22px}
+.features div{padding:8px}.features em{font-style:normal;color:#c06aff;font-size:25px;display:block;margin-bottom:10px}.features b{display:block}.features p{color:#a9a2b2;font-size:13px;margin-top:6px;line-height:1.5}
+footer{border-top:1px solid #4d1c8c;padding:35px 6%;display:flex;align-items:center;justify-content:space-between;gap:25px;background:#05030b}
+.footer-brand{font-size:23px;color:#c568ff}.footer-brand small{display:block;font-size:10px;color:#aaa;letter-spacing:2px;margin-top:7px}
+.socials{display:flex;gap:18px;color:#d8b7ff;font-size:13px}.join{color:#c568ff;font-size:23px;font-style:italic}
+.store-page{min-height:calc(100vh - 76px);display:none;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 35%,#31105b 0,#0c0617 35%,#05030b 75%);padding:50px 20px}
+.store-page.active-page{display:flex}
+.store-wrap{text-align:center;max-width:700px;padding:70px 35px;border:1px solid #7e27dd;border-radius:24px;background:#08040fdd;box-shadow:0 0 60px #8b1fff33}
+.store-icon{font-size:60px}.store-title{font-size:60px;font-weight:900;color:#c06aff;text-shadow:0 0 25px #a125ff;margin:8px}
+.development{font-size:20px;font-weight:900;color:#ffc02d;margin:20px 0}.store-wrap p{color:#ddd;line-height:1.6}.store-wrap .muted{color:#999;margin:4px 0 30px}.back-btn{font-size:14px;padding:13px 22px}
+.toast{position:fixed;bottom:25px;right:25px;background:#8b19ff;color:#fff;padding:13px 20px;border-radius:10px;font-weight:800;opacity:0;transform:translateY(20px);transition:.25s;z-index:50}
+.toast.show{opacity:1;transform:translateY(0)}
+@media(max-width:800px){
+ .navbar{padding:0 15px;height:66px;gap:10px}.brand{font-size:20px}.brand-mark{font-size:25px}nav{gap:13px}nav a{font-size:12px;padding:24px 0}.mini-server{display:none}
+ .hero{min-height:500px}.hero p{font-size:14px}.servers{grid-template-columns:1fr;margin-top:15px}.features{grid-template-columns:1fr 1fr}
+ .server-card{padding:18px}.server-info strong{font-size:16px}.copy-btn{font-size:11px;padding:9px}
+ footer{flex-direction:column;text-align:center}.socials{flex-wrap:wrap;justify-content:center}
+}
+@media(max-width:480px){.features{grid-template-columns:1fr}.logo{font-size:52px}.tagline{font-size:17px}.servers{padding:0 12px}.server-card{flex-wrap:wrap}.copy-btn{width:100%}.store-title{font-size:45px}}

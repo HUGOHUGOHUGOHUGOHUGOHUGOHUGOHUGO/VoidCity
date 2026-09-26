@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#7c22ff">
+  <title>VoidCity — SMP Apenas</title>
+  <meta name="description" content="VoidCity — servidor Minecraft SMP. Java e Bedrock.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="#inicio" data-page="home">
+      <span class="brand-mark">◆</span>
+      <span>VOID<span>CITY</span></span>
+    </a>
+    <nav>
+      <a href="#inicio" data-page="home" class="active">Início</a>
+      <a href="#sobre" data-page="home">Sobre</a>
+      <a href="#loja" data-page="store">Loja</a>
+      <a href="#discord" data-page="home">Discord</a>
+    </nav>
+    <a class="mini-server" href="#jogar" data-page="home">
+      <b>♛ VoidCity</b>
+      <small>SMP apenas</small>
+    </a>
+  </header>
+
+  <main>
+    <section id="home" class="page active-page">
+      <section class="hero" id="inicio">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <div class="logo">VOID<span>CITY</span></div>
+          <div class="tagline">SMP APENAS</div>
+          <p>Construa, explore e evolua em um mundo feito<br>para você e seus amigos.</p>
+          <a class="play-btn" href="#jogar">▶ &nbsp; JOGAR AGORA</a>
+        </div>
+      </section>
+
+      <section class="servers" id="jogar">
+        <div class="server-card">
+          <div class="server-icon">☕</div>
+          <div class="server-info">
+            <span>IP JAVA</span>
+            <strong>voidcity.jogar.io</strong>
+            <small><i></i> Servidor Online</small>
+          </div>
+          <button class="copy-btn" data-copy="voidcity.jogar.io">▣ COPIAR</button>
+        </div>
+
+        <div class="server-card">
+          <div class="server-icon">▣</div>
+          <div class="server-info">
+            <span>IP BEDROCK</span>
+            <strong>enx-cirion-60.enx.host</strong>
+            <b class="port">Porta: 10058</b>
+            <small><i></i> Servidor Online</small>
+          </div>
+          <button class="copy-btn" data-copy="enx-cirion-60.enx.host">▣ COPIAR</button>
+        </div>
+      </section>
+
+      <section class="about" id="sobre">
+        <div class="about-text">
+          <div class="section-title"><span>◆</span> POR QUE JOGAR<br>NA <b>VOIDCITY?</b></div>
+          <div class="features">
+            <div><em>♟</em><b>Comunidade Ativa</b><p>Faça novos amigos e jogue junto!</p></div>
+            <div><em>◈</em><b>Seguro e Estável</b><p>Servidor sempre online e sem lag.</p></div>
+            <div><em>★</em><b>Eventos e Novidades</b><p>Sempre temos algo novo para você!</p></div>
+            <div><em>⚒</em><b>Sistema de Clans</b><p>Junte-se, conquiste e domine o servidor!</p></div>
+            <div><em>◫</em><b>Mundos Incríveis</b><p>Explore, construa e viva grandes aventuras!</p></div>
+            <div><em>♥</em><b>SMP Apenas</b><p>Foco total na experiência de sobrevivência!</p></div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section id="store" class="page store-page">
+      <div class="store-wrap">
+        <div class="store-icon">🛒</div>
+        <div class="store-title">LOJA</div>
+        <div class="development">⚠ EM DESENVOLVIMENTO</div>
+        <p>A loja da VoidCity ainda está sendo preparada.</p>
+        <p class="muted">Em breve você poderá encontrar itens, ranks e muito mais!</p>
+        <a class="back-btn" href="#inicio" data-page="home">← VOLTAR AO INÍCIO</a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="discord">
+    <div class="footer-brand">◆ <b>VoidCity</b><small>MAIS QUE UM SERVIDOR,<br>UMA COMUNIDADE!</small></div>
+    <div class="socials"><span>Discord</span><span>YouTube</span><span>Instagram</span><span>TikTok</span></div>
+    <div class="join">Junte-se a nós!</div>
+  </footer>
+
+  <div class="toast" id="toast">IP copiado!</div>
+  <script src="script.js"></script>
+</body>
+</html>
